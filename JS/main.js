@@ -1,7 +1,7 @@
 let toggler = document.querySelector(".toggle");
 let nav = document.querySelector("nav");
 let close = document.querySelector(".close");
-let link = document.querySelectorAll("nav a");
+let link = document.querySelectorAll(".link");
 
 toggler.onclick = () => {
     nav.classList.add("open");
