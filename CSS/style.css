@@ -108,10 +108,10 @@ nav {
     flex-direction: column;
     justify-content: center;
     transition: var(--main-transition);
-    transform: translateY(-100%);
+    transform: translateX(100%);
 }
 nav.open {
-    transform: translateY(0);
+    transform: translateX(0);
 }
 nav .close {
     position: fixed;
