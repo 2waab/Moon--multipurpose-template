@@ -83,7 +83,6 @@ ul {
     height: 40px;
     background-color: var(--backgound-color);
     border-radius: 5px;
-    border: 1px solid #e1e1e1;
     cursor: pointer;
     display: flex;
     flex-direction: column;
@@ -92,12 +91,10 @@ ul {
 }
 .toggle span{
     width: 100%;
-    background-color: #d9d9d9;
+    background-color: var(--text-color);
     height: 3px;
     transition: var(--main-transition);
-}
-.toggle:hover span {
-    background-color: var(--text-color);
+    border-radius: 99999999px;
 }
 nav {
     position: fixed;
@@ -189,3 +186,57 @@ nav a:hover {
     }
 }
 /* End Landing  */
+/* Start Section One */
+.section-one {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: var(--backgound-color);
+}
+.section-one .container {
+    text-align: center;
+}
+.section-one h2 {
+    margin: 0 auto;
+    width: 350px;
+    font-size: 30px;
+    color: var(--text-color);
+}
+.section-one h2 + p {
+    margin: 0 auto;
+    width: 600px;
+    margin-top: 20px;
+    font-size: 20px;
+    color: var(--text-color);
+    line-height: 1.5;
+}
+.section-one .boxs {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+    margin-top: 40px;
+}
+.section-one .box {
+    padding: 15px;
+}
+.section-one .box .image {
+    width: 50%;
+    margin: 0 auto;
+}
+.section-one .box .image img {
+    width: 100%;
+}
+.section-one .box .text h3 {
+    color: var(--text-color);
+}
+.section-one .box .text p {
+    color: #aaa;
+    line-height: 2;
+}
+.section-one .box .text a {
+    color: var(--main-color-alt);
+    transition: var(--main-transition);
+}
+.section-one .box .text a:hover {
+    color: var(--main-color);
+}
+/* End Section One */
