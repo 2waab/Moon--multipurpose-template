@@ -179,7 +179,7 @@ nav a:hover {
 @media (max-width: 992px) {
     .landing {
         background-image: none;
-        background-color: var(--backgound-color);
+        background-color: #f1f1f1;
     }
     .landing p {
         width: 80%;
@@ -238,5 +238,11 @@ nav a:hover {
 }
 .section-one .box .text a:hover {
     color: var(--main-color);
+}
+@media (max-width: 992px) {
+    .section-one h2 + p {
+        width: 300px;
+        font-size: 14px;
+    }
 }
 /* End Section One */
